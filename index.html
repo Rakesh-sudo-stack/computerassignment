@@ -1,0 +1,474 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient(to bottom,rgb(51, 163, 88),rgb(17, 129, 68),rgba(9, 119, 46, 0.856)); */
+    background: linear-gradient(rgb(116, 116, 204),rgb(118, 118, 207),rgb(91, 91, 248));
+}
+
+header{
+    height: 4rem;
+    width: 100%;
+    color: white;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: center;
+    /* background: linear-gradient(rgb(116, 116, 204),rgb(118, 118, 207),rgb(91, 91, 248)); */
+    background: linear-gradient(to bottom,rgb(51, 163, 88),rgb(17, 129, 68),rgba(9, 119, 46, 0.856));
+}
+
+.body{
+    padding: 2.5rem 4.5rem;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+thead{
+    color:grey;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+thead tr td{
+    text-align: center;
+}
+
+tbody tr td{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(117, 115, 115);
+}
+
+tbody tr td b{
+    color:red;
+    font-size: 1.2rem;
+}
+
+tbody tr td strong{
+    color:green;
+    font-size: 1.4rem;
+}
+
+.roll{
+    color: rgb(70, 119, 165);
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa-check{
+    color:green;
+}
+
+.fa-xmark{
+    color:red;
+}
+
+td button{
+    height: 2rem;
+    width:6rem;
+    background: linear-gradient(rgb(108, 108, 197),rgb(82, 82, 207),rgb(40, 40, 202));
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin: 0.6rem;
+    cursor: pointer;
+}
+
+#clearchecksbtn, #printbtn{
+    background:linear-gradient(rgb(108, 37, 155),rgb(108, 36, 150),rgb(132, 0, 255))
+}
+
+@media(max-width:941px){
+    html{
+        font-size: 90%;
+    }
+    .Physics{
+        content: '';
+        position: relative;
+    }
+    .Physics:after{
+        position: absolute;
+        content: 'P';
+        height: 100%;
+        width: 100%;
+        background:#fff;
+        top:0;
+        left:0;
+    }
+    .Chemistry{
+        content: '';
+        position: relative;
+    }
+    .Chemistry:after{
+        position: absolute;
+        content: 'C';
+        height: 100%;
+        width: 100%;
+        background:#fff;
+        top:0;
+        left:0;
+    }
+    .Biology{
+        content: '';
+        position: relative;
+    }
+    .Biology:after{
+        position: absolute;
+        content: 'B';
+        height: 100%;
+        width: 100%;
+        background:#fff;
+        top:0;
+        left:0;
+    }
+}
+
+@media(max-width:757px){
+    html{
+        font-size: 80%;
+    }
+}
+
+@media(max-width:563px){
+    html{
+        font-size: 70%;
+    }
+}
+
+@media(max-width:506px){
+    html{
+        font-size: 55%;
+    }
+}    </style>
+    <script src="https://kit.fontawesome.com/40bc81af5c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        Computer Assignments
+    </header>
+    <div class="body">
+        <table>
+            <thead>
+                <tr>
+                    <td>Roll</td>
+                    <td>Name</td>
+                    <td class="Copy">Copy</td>
+                    <td class="Practical">Practical</td>
+                    <td class="VIVA">VIVA</td>
+                </tr>
+            </thead>
+            <tbody>
+                                <tr>
+                    <td class="roll">1</td>
+                    <td>Krish Kumar Singh</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">2</td>
+                    <td>Rakesh Jaiswal</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">3</td>
+                    <td>Chandramani Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">4</td>
+                    <td>Rishabh Kumar Pandey</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">5</td>
+                    <td>Akshit</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">6</td>
+                    <td>Vaidehi Singh</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">7</td>
+                    <td>Harshit Raj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">8</td>
+                    <td>Armaan Arya</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">9</td>
+                    <td>Harsh Vardhan Aman</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">10</td>
+                    <td>Dikshant Bajaj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">11</td>
+                    <td>Aaditya Raj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">12</td>
+                    <td>Priti Kumari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">13</td>
+                    <td>Aashka Snehil</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">14</td>
+                    <td>Yuvraj Singh</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">15</td>
+                    <td>Sweety Kumari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">16</td>
+                    <td>Rohit Raj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">17</td>
+                    <td>Ayush Raj Gupta</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">18</td>
+                    <td>Sourabh Prakash</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">19</td>
+                    <td>NSO</td>
+                    <td><b>NSO</b></td>
+                    <td><b>NSO</b></td>
+                    <td><b>NSO</b></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">20</td>
+                    <td>Namrata Tanajee Pawar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">21</td>
+                    <td>Shreya Kumari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">22</td>
+                    <td>Ram Vinay Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">23</td>
+                    <td>Shristy Raj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">24</td>
+                    <td>Prince Tiwari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">25</td>
+                    <td>Katyayani Kiran</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">26</td>
+                    <td>Sonali Kumari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">27</td>
+                    <td>NSO</td>
+                    <td><b>NSO</b></td>
+                    <td><b>NSO</b></td>
+                    <td><b>NSO</b></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">28</td>
+                    <td>Deepak Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">29</td>
+                    <td>Aryan Singh</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">30</td>
+                    <td>Kalpana Kumari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">31</td>
+                    <td>Jaishmine Singh</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">32</td>
+                    <td>Sameer Raj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">33</td>
+                    <td>Snigdha Kumari</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">34</td>
+                    <td>NSO</td>
+                    <td><b>NSO</b></td>
+                    <td><b>NSO</b></td>
+                    <td><b>NSO</b></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">35</td>
+                    <td>Kunal Ojha</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">36</td>
+                    <td>Anand Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">37</td>
+                    <td>Vicky Raj</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">38</td>
+                    <td>Premjeet Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">39</td>
+                    <td>Rishu Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">40</td>
+                    <td>Shubham Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td class="roll">41</td>
+                    <td>Ashutosh Kumar</td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                    <td><strong></strong></td>
+                </tr>
+                                    <tr>
+                    <td colspan=6><button id="printbtn" onclick="window.print()">Print</button></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
